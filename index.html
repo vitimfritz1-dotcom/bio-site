@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -842,6 +843,68 @@ footer b{font:650 17px/1.2 var(--sans)!important;letter-spacing:-.02em;color:var
   .lead{font-size:15.5px;margin-top:18px;padding-top:16px}.m-label{margin:24px 2px 12px;font-size:13px}
   .menu{gap:10px}.m-row{min-height:72px;border-radius:18px}.m-ic{width:44px;height:44px;border-radius:13px}.m-tx b{font-size:16.5px}.m-tx small{font-size:13px}
 }
+
+/* ===== prévia animada da mentoria (mentoria.fritzadv.com) ===== */
+.mt-frame{padding:6px;border-radius:20px!important;background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.02));border:1px solid var(--line);margin:4px 0 16px}
+.mt-demo{background:#05070D;color:#E6ECF5;aspect-ratio:1/1.08}
+.mt-demo .spot{display:block;background:radial-gradient(closest-side,rgba(109,240,163,.18),transparent)}
+.mt-demo .ripple{display:block;border:2px solid rgba(109,240,163,.9);box-shadow:0 0 12px rgba(109,240,163,.6)}
+.mt-demo .glare,.mt-demo .spark{display:block}
+.mt-view{position:relative;flex:1;min-height:0;margin:0 8px 8px;border-radius:12px;overflow:hidden;background:radial-gradient(120% 70% at 50% 0%,#0F1626,#05070D 70%);border:1px solid rgba(255,255,255,.06)}
+.mt-scr{position:absolute;inset:0;padding:16px 14px 12px;display:flex;flex-direction:column;opacity:0;transform:translateX(18px);transition:opacity .4s,transform .45s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.mt-scr.show{opacity:1;transform:none}
+.mt-glow{position:absolute;left:50%;top:-60px;width:260px;height:180px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(109,240,163,.22),transparent);pointer-events:none}
+.mt-k{position:relative;font:500 10px/1 var(--mono);color:#8FA3AD;letter-spacing:.02em;margin-bottom:10px}
+.mt-area{display:inline-block;color:#04210F;background:#6DF0A3;padding:3px 6px;border-radius:5px;margin-left:2px;transition:transform .25s}
+.mt-area.swap{animation:areaswap .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes areaswap{0%{transform:translateY(6px);opacity:0}100%{transform:none;opacity:1}}
+.mt-h{position:relative;font:650 21px/1.12 var(--sans);letter-spacing:-.035em;color:#fff}
+.mt-h em{font-style:normal;color:#6DF0A3}
+.mt-sub{position:relative;font-size:11.5px;line-height:1.4;color:#9AA7B6;margin:10px 0 12px}
+.mt-cta{position:relative;display:flex;align-items:center;justify-content:center;height:38px;border-radius:10px;font:600 12.5px/1 var(--sans);color:#04210F;
+  background:linear-gradient(180deg,#8FF5BA,#4FE08E);box-shadow:0 10px 24px -10px rgba(109,240,163,.8),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .15s,filter .15s}
+.mt-cta.pressed{transform:scale(.96);filter:brightness(1.1)}
+.mt-tick{position:relative;margin-top:auto;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}
+.mt-tick div{display:flex;gap:6px;width:max-content;animation:tick 14s linear infinite}
+.mt-tick span{font:500 9.5px/1 var(--mono);color:#9BFFD9;border:1px solid rgba(109,240,163,.25);background:rgba(109,240,163,.06);padding:5px 7px;border-radius:6px;white-space:nowrap}
+@keyframes tick{to{transform:translateX(-50%)}}
+.mt-qh{display:flex;justify-content:space-between;font:500 10px/1 var(--mono);color:#8FA3AD;margin-bottom:8px}
+.mt-qh b{color:#6DF0A3;font-weight:500}
+.mt-qbar{height:4px;border-radius:9px;background:rgba(255,255,255,.07);overflow:hidden;margin-bottom:14px}
+.mt-qbar i{display:block;height:100%;width:25%;border-radius:9px;background:linear-gradient(90deg,#4FE08E,#5BE3FF);box-shadow:0 0 10px rgba(109,240,163,.6);transition:width .9s cubic-bezier(.2,.7,.2,1)}
+.mt-q{font:600 15px/1.25 var(--sans);letter-spacing:-.02em;color:#fff;margin-bottom:12px}
+.mt-opt{display:flex;align-items:center;gap:9px;padding:9px 10px;margin-bottom:6px;border-radius:9px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);font-size:11.5px;color:#C9D1E2;transition:border-color .2s,background .2s,box-shadow .2s}
+.mt-opt b{width:18px;height:18px;border-radius:5px;display:grid;place-items:center;font:600 9.5px/1 var(--mono);color:#8FA3AD;background:rgba(255,255,255,.06);flex:none}
+.mt-opt.hover{border-color:rgba(109,240,163,.5)}
+.mt-opt.sel{border-color:#6DF0A3;background:rgba(109,240,163,.1);box-shadow:0 0 0 3px rgba(109,240,163,.12);color:#fff}
+.mt-opt.sel b{background:#6DF0A3;color:#04210F}
+.mt-res{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.mt-ring{--p:0%;position:relative;width:74px;height:74px;flex:none;border-radius:50%;display:flex;align-items:baseline;justify-content:center;padding-top:22px;
+  background:conic-gradient(#6DF0A3 var(--p),rgba(255,255,255,.07) 0);transition:--p 1.4s cubic-bezier(.2,.7,.2,1)}
+.mt-ring::before{content:"";position:absolute;inset:6px;border-radius:50%;background:#0A0E19}
+.mt-ring b,.mt-ring span{position:relative;font:650 22px/1 var(--sans);color:#fff;letter-spacing:-.03em}
+.mt-ring span{font-size:12px;color:#8FA3AD;margin-left:1px}
+.mt-res small{display:block;font:500 9.5px/1.2 var(--mono);color:#8FA3AD;margin-bottom:4px}
+.mt-res b{font:600 12.5px/1.3 var(--sans);color:#fff}
+.mt-proof{position:relative;padding:11px 12px;border-radius:11px;border:1px solid rgba(91,227,255,.22);background:linear-gradient(180deg,rgba(91,227,255,.08),rgba(91,227,255,.02));margin-bottom:12px}
+.mt-proof small{display:block;font:500 9.5px/1 var(--mono);color:#5BE3FF;margin-bottom:6px}
+.mt-proof b{display:block;font:650 24px/1 var(--sans);letter-spacing:-.04em;color:#fff}
+.mt-proof span{font-size:11px;color:#9AA7B6}
+.mt-up{position:absolute;right:10px;top:10px;font:600 10px/1 var(--mono);font-style:normal;color:#04210F;background:#6DF0A3;padding:4px 6px;border-radius:5px;opacity:0;transform:scale(.6);transition:opacity .3s,transform .4s cubic-bezier(.2,.9,.3,1.4)}
+.mt-up.show{opacity:1;transform:none}
+.mt-demo .dm-toast{left:10px;right:10px;bottom:10px;background:#0F2A1C;color:#E6FFF0;border:1px solid rgba(109,240,163,.35);box-shadow:0 12px 24px -10px rgba(0,0,0,.8);font-size:10.5px}
+.mt-demo .dm-toast i{background:#25D366}
+@property --p{syntax:"<percentage>";inherits:false;initial-value:0%}
+
+/* ===== storytelling: cada bloco se revela em sequência ao rolar ===== */
+.card .in>*{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.card.on .in>*{opacity:1;transform:none}
+.card.on .in>*:nth-child(1){transition-delay:.05s}.card.on .in>*:nth-child(2){transition-delay:.15s}
+.card.on .in>*:nth-child(3){transition-delay:.25s}.card.on .in>*:nth-child(4){transition-delay:.35s}
+.card.on .in>*:nth-child(5){transition-delay:.45s}.card.on .in>*:nth-child(6){transition-delay:.55s}
+.card.on .in>*:nth-child(n+7){transition-delay:.62s}
+.card .in>.area{transition:none}
+@media (prefers-reduced-motion:reduce){.card .in>*{opacity:1;transform:none;transition:none}.mt-tick div{animation:none}}
 </style>
 </head>
 <body>
@@ -962,19 +1025,46 @@ footer b{font:650 17px/1.2 var(--sans)!important;letter-spacing:-.02em;color:var
   <section class="block" id="mentoria">
     <div class="sh"><span class="sh-n">03</span><div class="sh-tx"><b>Mentoria</b><small>Para advogados de qualquer área</small></div><a class="sh-top" href="#top" aria-label="Voltar ao menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span>menu</span></a></div>
     <article class="card mt"><div class="in">
-      <div class="eyebrow"><i class="mt-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></i><span class="ey-tx"><b>MENTORIA</b><small>INDIVIDUAL · AO VIVO</small></span><span class="tag live-tag"><i></i>vagas abertas</span></div>
+      <div class="eyebrow"><i class="mt-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></i><span class="ey-tx"><b>MENTORIA</b><small>ENCONTRO INDIVIDUAL</small></span><span class="tag live-tag"><i></i>vagas abertas</span></div>
       <h2>Você é um bom advogado. O cliente só <em>ainda não sabe disso.</em></h2>
-      <p>Te ensino o método que uso para atrair clientes todos os dias e fechar mais contratos.</p>
-      <div class="stats">
-        <div><b>1,97<small>mi</small></b><span>visualizações · 14 dias</span></div>
-        <div><b>+1.570</b><span>seguidores · 14 dias</span></div>
-      </div>
-      <p class="stats-cap">Resultado do meu próprio perfil, com o método que eu ensino.</p>
-      <ul class="fronts"><li><span class="fr-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></span><b>Ser visto</b><small>perfil que atrai cliente</small></li><li><span class="fr-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></span><b>Captar todo dia</b><small>sem indicação</small></li><li><span class="fr-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></span><b>Tráfego pago</b><small>anúncio que traz cliente</small></li><li><span class="fr-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4L19 7"/></svg></span><b>Fechar contratos</b><small>do “oi” ao contrato</small></li></ul>
-      <div class="bonus"><span class="bonus-k">bônus</span>1 mês do Jurisclik incluso</div>
+      <p>Te mostro, frente a frente, o método que uso para atrair clientes todos os dias e fechar mais contratos.</p>
+      <div class="frame mt-frame"><div class="demo mt-demo" id="mtdemo" aria-hidden="true">
+        <div class="dm-bar dark"><i></i><i></i><i></i><span class="url">mentoria.fritzadv.com</span></div>
+        <div class="mt-view">
+          <div class="mt-scr show" data-s="hero">
+            <div class="mt-glow"></div>
+            <div class="mt-k">Para advogados de <span class="mt-area" id="mtarea">Trabalhista</span></div>
+            <div class="mt-h">Você é um bom advogado. O cliente só <em>ainda não sabe disso.</em></div>
+            <div class="mt-sub">Encontro individual para atrair clientes todo dia e fechar mais contratos.</div>
+            <div class="mt-cta" data-t="cta1"><span>Quero garantir minha vaga</span></div>
+            <div class="mt-tick"><div><span>Prospecção diária</span><span>Tráfego pago</span><span>Fechamento de contratos</span><span>Visibilidade no Instagram</span><span>Prospecção diária</span><span>Tráfego pago</span></div></div>
+          </div>
+          <div class="mt-scr" data-s="quiz">
+            <div class="mt-qh"><span>Diagnóstico rápido</span><b id="mtqn">1 de 4</b></div>
+            <div class="mt-qbar"><i id="mtqbar"></i></div>
+            <div class="mt-q">De onde vem a maioria dos seus clientes hoje?</div>
+            <div class="mt-opt"><b>A</b>Ainda não tenho clientes chegando</div>
+            <div class="mt-opt" data-t="o2"><b>B</b>Quase só de indicação</div>
+            <div class="mt-opt"><b>C</b>Às vezes do Instagram</div>
+            <div class="mt-opt"><b>D</b>Instagram e anúncios, toda semana</div>
+          </div>
+          <div class="mt-scr" data-s="result">
+            <div class="mt-res">
+              <div class="mt-ring" id="mtring" style="--p:0%"><b id="mtpct">0</b><span>%</span></div>
+              <div><small>Seu nível de captação hoje</small><b>Você tem base, mas está deixando clientes na mesa.</b></div>
+            </div>
+            <div class="mt-proof"><small>Resultado real · 14 dias</small><b id="mtviews">0</b><span>visualizações no meu Instagram</span><em class="mt-up">+5.529%</em></div>
+            <div class="mt-cta" data-t="cta2"><span>Quero resolver isso no encontro</span></div>
+          </div>
+          <div class="dm-toast" data-t="toast"><i></i>Vaga garantida! Agora é só marcar o dia no WhatsApp</div>
+        </div>
+        <div class="spot"></div><div class="glare"></div>
+        <div class="cursor"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.5L16.5 20 13 21l-3.5-7.5L5 17z" fill="#fff" stroke="#0B1020" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      </div></div>
       <div class="actions">
-        <a class="btn pri" href="#" data-wa="Olá, Dr. Victor Hugo! Vim pela sua página e quero saber como funciona a mentoria."><span class="wa-dot"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.3-.2-.5-.3z"/></svg></span>Quero entrar na mentoria</a>
-        <div class="note">Por videochamada · qualquer área do Direito</div>
+        <a class="btn pri" data-landing="mentoria" href="https://mentoria.fritzadv.com/">Conhecer a mentoria<svg class="arr-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="note">Encontro individual · vagas limitadas</div>
+        <a class="btn sec" href="#" data-wa="Olá, Dr. Victor Hugo! Vim pela sua página e quero tirar uma dúvida sobre a mentoria."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.3-.2-.5-.3z"/></svg>Tirar dúvidas no WhatsApp</a>
       </div>
     </div></article>
   </section>
@@ -1048,7 +1138,8 @@ const CONFIG = {
     trabalhadores: "https://SUA-LANDING-TRABALHADORES.com.br",
     empresas:      "https://SUA-LANDING-EMPRESAS.com.br",
     jurisclik:     "https://site.jurisclik.com.br",
-    normiq:        "https://site.normiq.com.br"
+    normiq:        "https://site.normiq.com.br",
+    mentoria:      "https://mentoria.fritzadv.com/"
   }
 };
 // ==========================================================
@@ -1156,6 +1247,27 @@ if(!reduce){
     toast.classList.add("show");d.sparks(gen,"#22B573",12);await sleep(500);d.flash();await sleep(2000);
     d.hide();await sleep(300);toast.classList.remove("show");det.classList.remove("show");await sleep(500);
   });
+
+  const mt=document.getElementById("mtdemo");
+  if(mt) loopDemo(mt,async d=>{
+    const S=n=>mt.querySelector(`[data-s="${n}"]`),hero=S("hero"),quiz=S("quiz"),res=S("result"),toast=d.T("toast"),area=document.getElementById("mtarea"),
+      bar=document.getElementById("mtqbar"),qn=document.getElementById("mtqn"),o2=d.T("o2"),ring=document.getElementById("mtring"),pct=document.getElementById("mtpct"),
+      views=document.getElementById("mtviews"),up=mt.querySelector(".mt-up"),cta1=d.T("cta1"),cta2=d.T("cta2");
+    [quiz,res].forEach(x=>x.classList.remove("show"));hero.classList.add("show");toast.classList.remove("show");o2.classList.remove("sel","hover");
+    bar.style.width="25%";qn.textContent="1 de 4";ring.style.setProperty("--p","0%");pct.textContent="0";views.textContent="0";up.classList.remove("show");area.textContent="Trabalhista";
+    const R=mt.getBoundingClientRect();d.reset(R.width*.75,R.height*.92);await sleep(500);
+    for(const a of ["Família","Previdenciário","Cível","Qualquer área"]){area.textContent=a;area.classList.remove("swap");void area.offsetWidth;area.classList.add("swap");await sleep(650)}
+    d.show();await sleep(300);
+    await d.moveTo(cta1,.5,.5,800);await d.click(cta1);d.sparks(cta1,"#6DF0A3",8);await sleep(200);
+    hero.classList.remove("show");quiz.classList.add("show");await sleep(900);
+    await d.moveTo(o2,.5,.5,800);o2.classList.add("hover");await sleep(250);await d.click(o2);o2.classList.remove("hover");o2.classList.add("sel");d.sparks(o2,"#6DF0A3",8);
+    await sleep(400);bar.style.width="100%";for(const n of [2,3,4]){qn.textContent=n+" de 4";await sleep(260)}
+    await sleep(350);quiz.classList.remove("show");res.classList.add("show");await sleep(450);
+    ring.style.setProperty("--p","42%");await d.count(pct,42,1300,v=>Math.round(v));d.sparks(ring,"#6DF0A3",8);
+    await d.count(views,1975702,1500,v=>Math.round(v).toLocaleString("pt-BR"));up.classList.add("show");d.sparks(up,"#5BE3FF",8);await sleep(700);
+    await d.moveTo(cta2,.5,.5,800);await d.click(cta2);toast.classList.add("show");d.sparks(cta2,"#25D366",12);await sleep(300);d.flash();await sleep(2300);
+    d.hide();await sleep(400);toast.classList.remove("show");await sleep(400);
+  });
   const jk=document.getElementById("jkdemo");
   if(jk) loopDemo(jk,async d=>{
     const search=d.T("search"),q=document.getElementById("jkq"),c1=d.T("c1"),doc=d.T("doc"),bar=document.getElementById("jkbar"),st=document.getElementById("jkst"),total=d.T("total"),val=document.getElementById("jkval"),bolt=jk.querySelector(".jk-bolt");
@@ -1182,3 +1294,5 @@ function startDoc(){
 </script>
 </body>
 </html>
+
+</body></html>
